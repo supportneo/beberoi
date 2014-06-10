@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<zend-config xmlns:zf="http://framework.zend.com/xml/zend-config-xml/1.0/">
+    <production>
+    <client>
+        <action></action>
+        <method>post</method>
+        <elements>
+		<titre><type>text</type><options><label>Titre</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></titre>
+		<nom><type>text</type><options><label>Nom</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></nom>
+		<prenom><type>text</type><options><label>Prenom</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></prenom>
+		<adresse_1><type>text</type><options><label>Adresse N°1</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></adresse_1>
+		<adresse_2><type>text</type><options><label>Adresse N°2</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></adresse_2>
+		<code_postal><type>text</type><options><label>Code postal</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></code_postal>
+		<ville><type>text</type><options><label>Ville</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></ville>
+		<pays><type>text</type><options><label>Pays</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></pays>
+		<tel_1><type>text</type><options><label>Teléphone N°1</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></tel_1>
+		<tel_2><type>text</type><options><label>Teléphone N°2</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></tel_2>
+		<newsletter><type>checkbox</type><options><label>Newsletter</label><description></description><required></required><decorators><decorator>Composite</decorator></decorators></options></newsletter>
+            <submit>
+                <type>submit</type>
+                <options>          
+                    <value>Valider</value>
+                    <decorators>
+                        <decorator>Composite</decorator>
+                    </decorators>
+                </options>
+            </submit>    
+        </elements>
+        <elementPrefixPath>
+            <decorator>
+                <prefix>Form_Decorators</prefix>
+                <path>../application/modules/default/forms/decorators/</path>
+                <type>decorator</type>
+            </decorator>
+        </elementPrefixPath>
+    </client>
+    </production>
+</zend-config>
