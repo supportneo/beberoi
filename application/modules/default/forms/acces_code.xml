@@ -10,7 +10,6 @@
                     <options>
                         <label>Nom du parent</label>
                         <required>1</required>
-                        <value>TEST</value>
                         <decorators>
                             <decorator>Composite</decorator>
                         </decorators>
@@ -26,7 +25,6 @@
                     <options>
                         <label>Code d'accès</label>
                         <required>1</required>
-                        <value>TEST</value>
                         <decorators>
                             <decorator>Composite</decorator>
                         </decorators>
@@ -36,17 +34,7 @@
                             </alnum>
                         </validators>
                     </options>
-                </code_acces>
-            
-                <submit>
-                    <type>submit</type>
-                    <options>                                 
-                        <value>Valider</value>
-                        <decorators>
-                            <decorator>Composite</decorator>
-                        </decorators>                                       
-                    </options>
-                </submit>               
+                </code_acces>              
             </elements>
             <elementPrefixPath>
                 <decorator>

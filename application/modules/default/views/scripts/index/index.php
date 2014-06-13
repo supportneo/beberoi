@@ -1,22 +1,37 @@
-<div class="page-header">
-    <h1>
-        Espace site
-        <small>
-            <i class="icon-double-angle-right"></i>
-            Partie site
-        </small>
-    </h1>
-</div>
-<div class="row">
-    <div class="col-xs-12">
-               
+<div id="top_nav">
     <ul>
-        <li><a href="/extranet/">Accès Espace Client : test@test.com / 1234</a></li>
-        <li><a href="/admin/">Accès Espace Admin : admin@test.com / test</a></li>
-        <li><a href="/auth/index/inscription">Inscription client</a></li>
+        <li><a href="/extranet/">BIENVENUE ! (Identifiez-vous)</a></li>
+        <li><a href="/auth/index/inscription/">VOTRE COMPTE</a></li>
+        <li><a href="#">PAIEMENT SÉCURISÉ</a></li>
     </ul>
-    
-        <?php echo $this->form; ?>
-        
-    </div>
+    <div class="clear"></div>
+</div>
+
+<div id="right_big">
+    <h1>La liste de naissance</h1>
+
+    <table width="100%" border="0" cellspacing="2" cellpadding="2" class="right_frm">
+        <tr>
+            <td><h3>Je souhaite créer une liste</h3></td>
+            <td><a href="#"><img class="alignleft" src="/assets/img/round.png" alt="btn" /></a></td>
+        </tr>
+        <tr>
+            <td><h3>Je souhaite offrir un cadeau</h3></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <?php echo $this->form; ?>
+            </td>
+            <td>
+                <input class="sub_btn" type="submit" value="Submit">
+            </td>
+        </tr>
+        <tr>
+            <td><h3>Je consulte une liste type</h3></td>
+            <td><a href="#"><img class="alignleft" src="/assets/img/round.png" alt="btn" /></a></td>
+        </tr>
+    </table>
+
+    <div class="clear"></div>
 </div>

@@ -1,13 +1,20 @@
-<h2>Liste de naissance n°<?php echo $this->id_liste; ?> :</h2>
+<div class="page-header">
+    <h1>
+        Liste de naissances - Details
+    </h1>
+</div>
 
-<p>Saisissez simplement le prix sur la zone texte en face du produit pour pouvoir effectuer votre choix.</p>
-<p>Une fois, votre choix effectué, vous serez redirigé vers une page récapitulative de votre commande pour réaliser votre paiement.</p>
+<div class="extra_info">
+    <h2>Liste de naissance n°<?php echo $this->id_liste; ?> :</h2>
 
-<p>Liste de naissance pour le bébé : <strong><?php echo $this->infos->prenom_enfant.' '.$this->infos->nom_famille; ?></strong></p>
+    <p>Saisissez simplement le prix sur la zone texte en face du produit pour pouvoir effectuer votre choix.</p>
+    <p>Une fois, votre choix effectué, vous serez redirigé vers une page récapitulative de votre commande pour réaliser votre paiement.</p>
 
-<p>Date de naissance : <strong><?php echo $this->FormatDate($this->infos->date_naissance); ?></strong> </p>
-<p>Lieu de naissance : <strong><?php echo $this->infos->lieu_naissance; ?></strong>
+    <p>Liste de naissance pour le bébé : <strong><?php echo $this->infos->prenom_enfant.' '.$this->infos->nom_famille; ?></strong></p>
 
+    <p>Date de naissance : <strong><?php echo $this->FormatDate($this->infos->date_naissance); ?></strong> </p>
+    <p>Lieu de naissance : <strong><?php echo $this->infos->lieu_naissance; ?></strong>
+</div>
 
 <?php if (count($this->liste)) { ?>
 

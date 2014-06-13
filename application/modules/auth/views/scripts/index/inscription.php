@@ -1,10 +1,10 @@
-<div class="page-header">
-    <h1>Espace client <small><i class="icon-double-angle-right"></i> Créer un compte client</small></h1>
-</div>
-<div class="row">
-    <div class="col-xs-12">     
+<div class="signin-center">
 
-        <form method="POST" action="">
+    <h1>Inscription</h1>
+    <h2>Créer un compte client</h2>    
+
+    <form method="POST" action="">
+        <dl class="zend_form">
             <?php echo $this->form->titre; ?>
             <?php echo $this->form->nom; ?>
             <?php echo $this->form->prenom; ?>
@@ -18,8 +18,7 @@
             <?php echo $this->form->email; ?>
             <?php echo $this->form->password; ?>
             <?php echo $this->form->newsletter; ?>
-            <p><?php echo $this->form->submit; ?></p>
-        </form>
-
-    </div>
+            <p>* En cochant cette case vous acceptez de bénéficier de l'inscription<br>à notre news letter.<?php echo $this->form->submit; ?></p>
+        </dl>
+    </form>
 </div>

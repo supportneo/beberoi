@@ -1,4 +1,8 @@
-<h2>Liste de naissances : </h2>
+<div class="page-header">
+    <h1>
+        Espace Client - Liste de naissances
+    </h1>
+</div>
 
 <?php if(count($this->paginator)) { ?>
 <table id="sample-table-2" class="table table-striped table-bordered table-hover" width="95%">

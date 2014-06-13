@@ -10,7 +10,6 @@
                     <options>
                         <label>Adresse E-mail</label>
                         <required>1</required>
-                        <value>test@test.com</value>
                         <decorators>
                             <decorator>Composite</decorator>
                         </decorators>
@@ -25,7 +24,6 @@
                     <type>text</type>
                     <options>
                         <label>Mot de passe</label>
-                        <value>1234</value>
                         <required>1</required>
                         <decorators>
                             <decorator>Composite</decorator>
@@ -36,8 +34,7 @@
                             </alnum>
                         </validators>
                     </options>
-                </password>
-            
+                </password> 
                 <submit>
                     <type>submit</type>
                     <options>                                 
@@ -46,7 +43,7 @@
                             <decorator>Composite</decorator>
                         </decorators>                                       
                     </options>
-                </submit>               
+                </submit>            
             </elements>
             <elementPrefixPath>
                 <decorator>
