@@ -1,8 +1,8 @@
 <div class="page-header">
-    <h1>Administration <small><i class="icon-double-angle-right"></i> Listes des naissances : </small></h1>
+    <h1>
+        Administration - Listes des naissances
+    </h1>
 </div>
-<div class="row">
-    <div class="col-xs-12">
 
 <?php if(count($this->paginator)) { ?>
 <table id="sample-table-2" class="table table-striped table-bordered table-hover" width="95%">
@@ -31,7 +31,5 @@
 <?php echo $this->paginationControl($this->paginator, 'Sliding', 'pagination.php'); ?>
 
 <?php } else { ?>
-<p>Vous n'avez accès à aucune liste de naissance pour le moment ...</p>
+    <p>Vous n'avez accès à aucune liste de naissance pour le moment ...</p>
 <?php } ?>
-    </div>
-</div>

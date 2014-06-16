@@ -62,10 +62,10 @@ class Application_Model_ListeNaissance
     
     public function liste_details($id_liste)
     {
-    $this->select                       =           $this->db->select()->from('liste_naissances');
-    $this->select->join('liste_naissances_det','liste_naissances_det.id_liste = liste_naissances.id_liste');
+    $this->select           =           $this->db->select()->from('liste_naissances_det');
+    $this->select->join('liste_naissances','liste_naissances.id_liste =  liste_naissances_det.id_liste');
     $this->select->where('liste_naissances.id_liste = '.$id_liste);
-    return $this->db->fetchAll($this->select);     
+    return $this->db->fetchAll($this->select);  
     }      
     
 

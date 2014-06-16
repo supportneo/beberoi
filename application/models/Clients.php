@@ -47,7 +47,16 @@ class Application_Model_Clients
     {
     $this->db->insert('liste_clients',array_merge($valeurs,array('password' => md5($valeurs['password']), 'actif' => 0,'date_insert' => new Zend_Db_Expr('NOW()'))));
     return $this->db->lastInsertId();
-    }      
+    }  
+
+/************************************************************************************************** 
+        Modifier Client : 
+***************************************************************************************************/    
+    
+    public function modification($id_client,$form)
+    {
+    return $this->db->update('liste_clients',$form,"id_client = ".(int) $id_client);
+    }    
     
 /**************************************************************************************************	
         Activer Client : 

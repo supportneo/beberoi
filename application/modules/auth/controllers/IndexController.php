@@ -64,9 +64,9 @@ class Auth_IndexController extends Core_Controller {
     $formValues['code_activation'] = $this->GenPassword();
     $id_client              =           $this->model_clients->inscription($formValues);
     
-    mail($formValues['email'],"Activation de votre compte","Bonjour, Veuillez activer votre compte .... : http://liste-naissance.prado-creation.net/auth/index/activation/id_client/".$id_client."/code_activation/".$formValues['code_activation']);
+    mail($formValues['email'],"Activation de votre compte","Bonjour, Veuillez activer votre compte .... : " . $this->view->serverUrl() . "/auth/index/activation/id_client/".$id_client."/code_activation/".$formValues['code_activation']);
     
-    $this->_flashMessenger->addMessage("Votre compte a été créé avec succès.");
+    $this->_flashMessenger->addMessage("Votre compte a été créé avec succès. Un email vous a été envoyé afin d'activer votre compte.");
     $this->_redirector->setGotoSimple('index','index','default');
     }   
     $this->view->form       =            $form;
@@ -91,7 +91,7 @@ class Auth_IndexController extends Core_Controller {
     $auth                   =           Zend_Auth::getInstance();
     $result                 =           $auth->authenticate($adapter);
     
-    $this->_helper->FlashMessenger("<p>Votre compte a été activé avec succès.</p><p>Vous êtes désormais connecté à votre espace client.</p>");
+    $this->_helper->FlashMessenger("Votre compte a été activé avec succès. Vous êtes désormais connecté à votre espace client.");
     
     $storage                =           $this->_auth->getStorage();
     $result                 =           $adapter->getResultRowObject(array('id_client','nom','prenom','email'));

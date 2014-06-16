@@ -26,13 +26,11 @@ class Admin_ListenaissanceController extends Core_Controller {
     public function detailsAction()
     {
     
-    $this->view->infos      =           $this->model_liste_naiss->liste_details($this->id_liste);
+    $this->view->infos      =           $this->model_liste_naiss->liste_infos($this->id_liste);
     
     // Liste des articles : 
         
-    $this->select           =           $this->db->select()->from('liste_naissances_det');
-    $this->select->join('liste_naissances','liste_naissances.id_liste =  liste_naissances_det.id_liste');
-    $this->view->liste      =           $this->db->fetchAll($this->select);
+    $this->view->liste      =           $this->model_liste_naiss->liste_details($this->id_liste);
     }
     
 

@@ -58,6 +58,7 @@ body {
 
 .wrapper{ margin:0 auto; width:1024px;}
 #left_part{width:500px;display:inline-block;vertical-align:top;margin-right: 19px;}
+#left_part h1{color: #EA549E;font: bold 26px 'FuturaBT-Medium';text-align: center;padding-bottom:10px;}
 #right_part{width:500px;display:inline-block;vertical-align:top;}
 .logo{ margin:0 auto 20px; }
 
@@ -89,7 +90,7 @@ body {
 }
 
 .sml_box_right{margin-right:0;}
-#left_part h1{color: #EA549E;font: bold 26px 'FuturaBT-Medium';text-align: center;padding-bottom:10px;}
+
 ul.box_list{ margin:10px;}
 
 ul.box_list li{ 
@@ -114,7 +115,7 @@ ul.logo_list{ margin:10px;}
 ul.logo_list li{ list-style:none; display:inline;}
 .add_tbl {padding:10px 20px;}
 .add_tbl p {font: 14px 'FuturaBT-Medium'; text-align:center; color:#BA78B5; margin:5px 0 0;}
-.add_tbl a,img {display:table;margin:auto;}
+.add_tbl a,img {display:table;}
 .add_tbl td {vertical-align:top;}
 
 #top_nav {
@@ -138,6 +139,7 @@ ul.logo_list li{ list-style:none; display:inline;}
 .list-home {padding:3%;border-top:4px solid #BA78B5;background-color: #fff;}
 .list-home .extra_info {margin-bottom: 25px;}
 .list-home .extra_info p {font-size:13px;margin-top: 5px;}
+.list-home .extra_info h1 {color: #87387a;font: bold 26px 'FuturaBT-Medium';padding-bottom:10px;}
 
 .foot_nav{margin:25px auto 0;background-color:#fff;padding: 5px 10px;}
 .foot_nav li{ font: 14px 'FuturaBT-Medium'; list-style:none; display:inline; margin-right:10px;}
@@ -191,6 +193,7 @@ ul.logo_list li{ list-style:none; display:inline;}
 .btn-primary {
   background-image: url(/assets/img/round.png);
   background-repeat: no-repeat;
+  background-color:none;
   width:65px;
   height:65px;
   padding:0;
@@ -200,6 +203,7 @@ ul.logo_list li{ list-style:none; display:inline;}
   vertical-align:baseline;
   float:right;
   display: block;
+  margin: 15px 0 -15px;
 }
 
 .btn-primary:hover {
@@ -208,6 +212,7 @@ ul.logo_list li{ list-style:none; display:inline;}
 
 .table {
   font-size: 14px;
+  margin: 0;
 }
 
 .label-success {
@@ -244,7 +249,7 @@ ul.logo_list li{ list-style:none; display:inline;}
 .signin-center h1{color: #87387a;font: bold 26px 'FuturaBT-Medium';text-align: center;padding-bottom:10px;}
 .signin-center h2{color:000;font: 14px 'FuturaBT-Medium';text-align: center;margin-bottom: 25px;}
 .signin-center p {display:block;height:57px;font-size: 11px;}
-.signin-center p button {top:-20px;position:relative;}
+.signin-center p button {top:-35px;position:relative;}
 .signin-center label {width:27%;}
 .signin-center input {width:73%;}
 .signin-center input#newsletter {width:10%;}
@@ -284,4 +289,6 @@ ul.logo_list li{ list-style:none; display:inline;}
 .extranet .extra_info p {font-size:13px;margin-top: 5px;}
 .extranet .button-modif {display:block;}
 .extranet input#newsletter {width:10%;}
-.extranet .button-modif {font-size: 11px;} 
+.extranet .button-modif {font-size: 11px;}
+
+.bonus-list {padding:3%;background-color:#fff;margin-top: 8px;} 

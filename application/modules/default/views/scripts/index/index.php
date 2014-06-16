@@ -1,7 +1,7 @@
 <div id="top_nav">
     <ul>
-        <li><a href="/extranet/">BIENVENUE ! (Identifiez-vous)</a></li>
-        <li><a href="/auth/index/inscription/">VOTRE COMPTE</a></li>
+        <li><a href="/extranet/">IDENTIFIEZ-VOUS</a></li>
+        <li><a href="/auth/index/inscription/">CRÉEZ VOTRE COMPTE</a></li>
         <li><a href="#">PAIEMENT SÉCURISÉ</a></li>
     </ul>
     <div class="clear"></div>

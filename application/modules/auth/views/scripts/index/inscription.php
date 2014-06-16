@@ -22,3 +22,5 @@
         </dl>
     </form>
 </div>
+
+<style type="text/css">.add_tbl a,img {margin:auto;}</style>

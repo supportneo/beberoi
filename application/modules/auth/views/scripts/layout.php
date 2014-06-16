@@ -29,7 +29,7 @@
                     <?php if (count($this->messages)) { ?>
                         <div class="alert alert-success">
                             <?php foreach ($this->messages as $no => $message) { ?>
-                                <?php if (!is_array($message)) { ?><?php echo $message; ?><?php } ?><br />
+                                <?php if (!is_array($message)) { ?><?php echo $message; ?><?php } ?>
                             <?php } ?>
                         </div>
                     <?php } ?>    

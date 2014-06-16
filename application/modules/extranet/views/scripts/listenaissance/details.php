@@ -45,7 +45,7 @@
                         <td><?php if($liste->ref_produit != '000') {echo $this->FormatXfp($liste->prix_paye); $prix_paye += $liste->prix_paye;} else {echo "CONFIDENTIEL";} ?> </td>
                         <td><?php if($liste->ref_produit != '000') {echo ($prix_restant >= 0) ? '<span class="label label-warning">Manque ' . $this->FormatXfp($prix_restant) . '</span>' : '<span class="label label-success">Déjà offert</span>';} ?></td>
 
-                        <th>
+                        <td>
                             <?php if ($prix_restant > 0 || $liste->ref_produit == '000') { ?>
                                 <input type="hidden" name="id_produit[]" value="<?php echo $liste->id_produit; ?>" />
                                 <input type="hidden" name="nom_produit[]" value="<?php echo $liste->nom_produit; ?>" />
@@ -53,7 +53,7 @@
                             <?php } else { ?>
                                 <span class="label label-success">Payé en intégralité</span>
                             <?php } ?>
-                        </th>
+                        </td>
                     </tr>
                 <?php } ?>
                     <tr>
